@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    height: 100px;
+    height: 6rem;
     background-color: rgba(246, 247, 249);
     align-items: center;
 }
@@ -22,4 +22,16 @@
     text-decoration: none;
     color: rgba(62, 146, 58);
     font: 400 1.2rem 'Playfair Display', serif;
+}
+
+.backgroun_images {
+    margin: 0;
+    padding: 0;
+}
+
+.main-images {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
 }
