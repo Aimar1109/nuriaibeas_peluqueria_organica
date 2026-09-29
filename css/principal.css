@@ -18,20 +18,6 @@
     background-color: rgba(30, 60, 30, 0.75);
 }
 
-@supports (animation-timeline: scroll()) {
-    @keyframes header-fondo {
-        from { background-color: rgba(30, 60, 30, 0); }
-        to   { background-color: rgba(30, 60, 30, 0.75); }
-    }
-
-    #header {
-        background-color: transparent;
-        animation: header-fondo linear both;
-        animation-timeline: scroll(); 
-        animation-range: 500px 800px;
-    }
-}
-
 #logoAndNav {
     max-width: 1000px; 
     margin: 0 auto;
