@@ -232,3 +232,300 @@
     height: 220px;
     object-fit: cover;
 }
+
+/* =========================
+   CABECERA DE CONTACTO
+   ========================= */
+
+.contact-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 7rem 2rem 3rem;
+    text-align: center;
+}
+
+.contact-header h1 {
+    margin-bottom: 1.5rem;
+
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.contact-header > p {
+    max-width: 1000px;
+    margin: 0 auto 2.5rem;
+
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BOTÓN AGENDA
+   ========================= */
+
+.contact-button {
+    display: inline-block;
+
+    padding: 0.8rem 1.8rem;
+
+    background-color: #777f84;
+    color: white;
+
+    border-radius: 3px;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #555e63;
+}
+
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+   ========================= */
+
+.contact-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2rem 5rem;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+
+    align-items: start;
+}
+
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+.contact-form-container {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+
+/* Labels */
+
+.form-group label,
+fieldset legend {
+    display: block;
+
+    margin-bottom: 0.6rem;
+
+    color: #222222;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.form-group label span {
+    color: #e45b5b;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+
+    background-color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+
+    box-sizing: border-box;
+}
+
+
+/* Cuando seleccionamos un campo */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #777f84;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* =========================
+   NOMBRE Y APELLIDOS
+   ========================= */
+
+.name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+
+/* =========================
+   RADIO BUTTONS
+   ========================= */
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+fieldset legend {
+    margin-bottom: 0.8rem;
+}
+
+fieldset label {
+    margin-right: 1.5rem;
+
+    color: #333333;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+fieldset input {
+    margin-right: 0.4rem;
+}
+
+
+/* =========================
+   PRIVACIDAD
+   ========================= */
+
+.privacy {
+    margin-bottom: 1.5rem;
+}
+
+.privacy label {
+    color: #333333;
+    font-size: 0.9rem;
+}
+
+.privacy p {
+    margin-top: 0.5rem;
+
+    color: #777777;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   BOTÓN ENVIAR
+   ========================= */
+
+form button {
+    padding: 0.8rem 1.8rem;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #777f84;
+    color: white;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555e63;
+}
+
+
+/* =========================
+   INFORMACIÓN DE CONTACTO
+   ========================= */
+
+.contact-info {
+    width: 100%;
+}
+
+.info-block {
+    margin-bottom: 1.5rem;
+}
+
+.info-block h2 {
+    margin-bottom: 0.4rem;
+
+    color: #222222;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.info-block p {
+    margin-left: 2.5rem;
+
+    color: #333333;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MAPA
+   ========================= */
+
+.contact-map {
+    width: 100%;
+    height: 230px;
+
+    margin-bottom: 1.5rem;
+
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .contact-header {
+        padding: 7rem 1.5rem 2rem;
+    }
+
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.5rem 4rem;
+    }
+
+    .name-fields {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
