@@ -94,10 +94,16 @@
 
 
 /* SERVICES */
+
+#services-background {
+    background-color: #d8f3e5;
+}
+
 #services {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: #d8f3e5;
 }
 
 #services h2 {
