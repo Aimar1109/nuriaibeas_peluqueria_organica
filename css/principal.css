@@ -28,7 +28,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5.5rem;  
+    height: 5.5rem;
+    position: relative; 
 }
 
 .navbar__logo {
@@ -80,9 +81,98 @@
     white-space: nowrap;
 }
 
+.dropdown-label {
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.has-dropdown:hover .dropdown {
+    display: block;
+}
+
 .dropdown li a:hover {
     background-color: #f2f2f2;
     color: #4a7c4e;
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.meun-overlay {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 220px;
+        background-color: rgb(30, 60, 30);
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    .menu-toggle:checked ~ .navbar_links {
+        display: flex;
+    }
+
+    .navbar_links li {
+        width: 100%;
+    }
+
+    .navbar_links a {
+        display: block;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .dropdown-label {
+        display: block;
+        padding: 0.8rem 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: static;   /* en vez de absolute: ocupa su propio espacio en el flujo */
+        display: none;
+        box-shadow: none;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .dropdown-toggle:checked ~ .dropdown {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .menu-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
 }
 
 
