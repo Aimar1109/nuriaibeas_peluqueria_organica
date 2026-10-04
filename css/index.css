@@ -129,6 +129,8 @@
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .services-card img {
@@ -146,19 +148,21 @@
 .desc {
     padding: .5rem .5rem;
     color: #666;
+    flex-grow: 1;
 }
 
-.services-card button {
+.btn-detalles {
+    display: inline-block;
     margin: 1rem;
     padding: .5rem 1rem;
     background-color: #333;
     color: white;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.services-card button:hover {
+.btn-detalles:hover {
     background-color: black;
 }
 
