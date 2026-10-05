@@ -15,15 +15,6 @@
     font-weight: 500;
 }
 
-.cuts-header p {
-    max-width: 750px;
-    margin: 0 auto 1rem;
-
-    color: #666666;
-    font-size: 1rem;
-    line-height: 1.7;
-}
-
 .price-notice {
     margin-top: 1.5rem !important;
 
@@ -31,6 +22,15 @@
 
     font-size: 0.9rem !important;
     font-style: italic;
+}
+
+.cuts-header p {
+    max-width: 750px;
+    margin: 0 auto 1rem;
+
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 .cut-block {
@@ -66,7 +66,7 @@
 }
 
 .tratamientos-video video {
-    max-height: 700px !important;
+    max-height: 700px ;
 }
 
 .cut-image:hover img {
@@ -90,6 +90,16 @@
     font-weight: 500;
 }
 
+.cut-price {
+    margin-top: 1.5rem;
+
+    color: #777f84;
+
+    font-size: 1.3rem !important;
+    font-weight: bold;
+}
+
+
 .cut-info p {
     margin-bottom: 1rem;
 
@@ -99,16 +109,8 @@
     line-height: 1.8;
 }
 
-.cut-price {
-    margin-top: 1.5rem !important;
 
-    color: #777f84 !important;
-
-    font-size: 1.3rem !important;
-    font-weight: bold;
-}
-
-.cut-block + .cut-block {
+.cut-block {
     padding-top: 4rem;
 
     border-top: 1px solid #eeeeee;

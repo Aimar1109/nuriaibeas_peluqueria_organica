@@ -111,14 +111,6 @@
     cursor: pointer;
 }
 
-.meun-overlay {
-    display: none;
-}
-
-@media (max-width: 768px) {
-
-}
-
 
 body {
     margin: 0;
@@ -209,14 +201,10 @@ footer {
 }
 
 
-/* Hover Facebook */
-
 .facebook:hover {
     background-color: rgb(24, 119, 242);
 }
 
-
-/* Contacto */
 
 .footer-contact {
     text-align: center;
@@ -253,6 +241,7 @@ footer {
     color: gray;
     font-size: 0.85rem;
 }
+
 
 @media (max-width: 768px) {
 
